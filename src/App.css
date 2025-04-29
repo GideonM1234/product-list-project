@@ -1,42 +1,31 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@font-face {
+  font-family: red-hat;
+  src: url(./assets/fonts/RedHatText-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: red-hat-italics;
+  src: url(./assets/fonts/RedHatText-Italic-VariableFont_wght.ttf);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+body{
+  background-color: var(--rose-50);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+:root {
+  --primary-red: hsl(14, 86%, 42%);          /* Vibrant Red */
+  --primary-green: hsl(159, 69%, 38%);       /* Jungle Green */
+  
+  --rose-50: hsl(20, 50%, 98%);              /* Soft Blush */
+  --rose-100: hsl(13, 31%, 94%);             /* Misty Rose */
+  --rose-300: hsl(14, 25%, 72%);             /* Muted Pink */
+  --rose-400: hsl(7, 20%, 60%);              /* Dusty Rose */
+  --rose-500: hsl(12, 20%, 44%);             /* Deep Mauve */
+  --rose-900: hsl(14, 65%, 9%);              /* Midnight Rose */ 
 }
